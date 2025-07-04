@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ========== Bootstrap ========== -->
+    <link rel="stylesheet" href="StyleCss/bootstrap.min.css" />
+
+    <!-- ========== Fount Awesome ========== -->
+    <link rel="stylesheet" href="StyleCss/all.min.css" />
+
+    <!-- ========== style Css ========== -->
+    <link rel="stylesheet" href="StyleCss/main.css" />
+
+    <!-- ========== my logo ========= -->
+    <link rel="shourtcut icon" href="Images/Ahmed Saad.ico">
+
+    <title>weather</title>
+</head>
+<body>
+
+    <!-- ========== ٍStrat Header ========== -->
+    <header>
+        <nav class="navbar navbar-expand-lg custom-navbar py-4">
+            <div class="container">
+            <div class="header-logo d-flex align-items-center">
+                <img src="Images/logo@2x.png" class="logo-img me-3" alt="logo" />
+                <div class="text-logo">
+                    <h4 class="text-white mb-0 fw-bold">Weather</h4>
+                    <h6 class="text-secondary mt-1 mb-0">tagline goes here</h6>
+                </div>
+            </div>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html" id="nav-home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="cameras.html">Live Cameras</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="photos.html">Photos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html" id="nav-contact">Contact</a>
+                      </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ========== End Header ========== -->
+
+<!-- ========== Start main container ========== -->
+<main>
+  <section class="search position-relative">
+    <div class="overlay"></div>
+    <div class="container py-5 position-relative z-2">
+      <div class="search-box d-flex justify-content-center mb-5">
+        <input type="text" class="search-input" placeholder="Find your location..." id="searchInput" />
+        <button class="btn btn-find" id="searchBtn">Find</button>
+      </div>
+    </div>
+  </section>
+
+<section class="forecast-table">
+  <div class="container">
+    <div class="row g-0 weather-cards text-white">
+
+      <!-- Day 1 -->
+      <div class="col-md-4">
+        <div class="weather-card today-card">
+          <div class="header d-flex justify-content-between">
+            <span>Wednesday</span>
+            <span>2July</span>
+          </div>
+          <div class="content p-4">
+            <h5 class="text-white">Select</h5>
+            <h1 class="display-3 fw-bold">21.1°C</h1>
+            <img src="Images/moon-icon.png" width="40" />
+            <p class="text-primary mt-2">Clear</p>
+            <div class="d-flex justify-content-between text-secondary mt-4">
+              <span><img src="Images/icon-umberella@2x.png" alt="umberella"> 20%</span>
+              <span><img src="Images/icon-compass@2x.png" alt="compass"> 18km/h</span>
+              <span><img src="Images/icon-wind@2x.png" alt="wind"> East</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="col-md-4">
+        <div class="weather-card day-2">
+          <div class="header text-center">Thursday</div>
+          <div class="content p-4 text-center">
+            <img src="Images/cloudy-icon.png" width="40" />
+            <h4 class="text-white mt-2">30.7°C</h4>
+            <div class="text-secondary">19.9°</div>
+            <p class="text-primary mt-2">Fog</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="col-md-4">
+        <div class="weather-card day-3">
+          <div class="header text-center">Friday</div>
+          <div class="content p-4 text-center">
+            <img src="Images/cloud-sun-icon.png" width="40" />
+            <h4 class="text-white mt-2">32.8°C</h4>
+            <div class="text-secondary">21.5°</div>
+            <p class="text-primary mt-2">Partly Cloudy</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+<!-- ========== End main container ========== -->
+
+<!-- ========== Start Footer ==========  -->
+  <footer class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <div class="search-box d-flex justify-content-center mb-5">
+            <input type="text" class="search-input" placeholder="Find your location..." />
+            <button class="btn btn-find">Subscribe</button>
+          </div>
+          <p class="text-secondary">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+        <div class="col-4">
+          <div class="inner">
+            <ul class="list-unstyled d-flex g-5">
+              <li class="me-2"><i class="fa-brands fa-facebook"></i></li>
+              <li class="me-2"><i class="fa-brands fa-twitter"></i></li>
+              <li class="me-2"><i class="fa-brands fa-google"></i></li>
+              <li class="me-2"><i class="fa-brands fa-pinterest"></i></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+<!-- ========== End Footer ==========  -->
+
+<script src="JS/bootstrap.bundle.min.js"></script>
+<script src="JS/index.js"></script>
+</body>
+</html>

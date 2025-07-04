@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather - Contact</title>
+
+    <!-- ========== Bootstrap ========== -->
+    <link rel="stylesheet" href="StyleCss/bootstrap.min.css" />
+
+    <!-- ========== Font Awesome ========== -->
+    <link rel="stylesheet" href="StyleCss/all.min.css" />
+
+    <!-- ========== Custom CSS ========== -->
+    <link rel="stylesheet" href="StyleCss/contacy.css" />
+  </head>
+  <body>
+    <!-- ========== Header ========== -->
+    <header>
+      <nav class="navbar navbar-expand-lg custom-navbar py-4 pb-5">
+        <div class="container">
+          <div class="header-logo d-flex align-items-center">
+            <img src="Images/logo@2x.png" class="logo-img me-3" alt="logo" />
+            <div class="text-logo">
+              <h4 class="text-white mb-0 fw-bold h5">Company name</h4>
+              <h6 class="text-secondary mt-1 mb-0">tagline goes here</h6>
+            </div>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" id="nav-home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cameras.html">Live Cameras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="photos.html">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" id="nav-contact">Contact</a>
+                </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ========== End Header ========== -->
+
+    <!-- ========== Contact Section ========== -->
+    <section class="container pb-5 mb-5">
+      <nav class="breadcrumb my-5">
+        <a href="#">Home</a> <span>→</span> <span class="active">Contact</span>
+      </nav>
+
+      <div class="contact-section">
+        <div class="contact-info">
+          <div class="card">
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Company Name INC.<br />2803
+              Avenue Street, Los Angeles
+            </p>
+            <p><i class="fas fa-phone"></i> +1 800 314 235</p>
+            <p><i class="fas fa-envelope"></i> contact@companyname.com</p>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h2>Contact us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+            consectetur inventore ducimus, facilis, numquam id soluta omnis eius
+            recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic,
+            ipsum sed!
+          </p>
+
+          <form>
+            <div class="row">
+              <input type="text" placeholder="Your name..." />
+              <input type="email" placeholder="Email Addresss..." />
+            </div>
+            <div class="row">
+              <input type="text" placeholder="Company name..." />
+              <input type="text" placeholder="Website..." />
+            </div>
+            <textarea placeholder="Message..."></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Script ========== -->
+    <script src="JS/contact.js"></script>
+  </body>
+</html>

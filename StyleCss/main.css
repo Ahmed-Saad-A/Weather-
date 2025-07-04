@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== Header ========== */
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+nav.custom-navbar {
+  background-color: #1e202b;
+}
+
+nav.custom-navbar .nav-link,
+nav.custom-navbar .navbar-brand {
+  color: #fff;
+}
+
+.navbar-nav a.nav-link {
+  padding: 5px 35px !important;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  font-weight: 400;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav a.nav-link:hover {
+  border-color: #009ad8;
+  color: #009ad8;
+}
+
+/* ========== End Header ========== */
+
+/* ========== Start Main Section ========== */
+main .search {
+  background-image: url("../Images/banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 70px 0 150px;
+  position: relative;
+  z-index: 1;
+}
+
+.search .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(30, 32, 43, 0.2);
+  z-index: 1;
+}
+
+.search .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* ========== Search Box ========== */
+.search-box {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  border-radius: 50px;
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+.search-input {
+  background-color: transparent;
+  border: none;
+  padding: 15px 25px;
+  flex-grow: 1;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.btn-find {
+  background-color: #009ad8;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 2px solid #009ad8;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-find:hover {
+  background-color: transparent;
+  color: #009ad8;
+}
+
+/* ========== Forecast Table ========== */
+.forecast-table {
+  background-color: #1e202b;
+  min-height: 400px;
+  position: relative;
+  padding-top: 140px;
+  padding-bottom: 60px;
+  z-index: 2;
+  overflow: visible;
+}
+
+/* ========== Weather Cards ========== */
+.weather-cards {
+  position: absolute;
+  top: -120px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 5;
+}
+
+/* ========== Card Base ========== */
+.weather-card {
+  border: none;
+  min-height: 330px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+/* ===== Day 1 ===== */
+.today-card {
+  background-color: #323544;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.today-card .header {
+  background-color: #2d303d;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #bfc1c8;
+}
+
+.today-card .content {
+  background-color: #323544;
+  padding: 25px 20px;
+}
+
+.today-card h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.today-card .d-flex span img {
+  width: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* ===== Day 2 ===== */
+.weather-card.day-2 {
+  background-color: #262936;
+  text-align: center;
+}
+
+.weather-card.day-2 .header {
+  background-color: #222530;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #bfc1c8;
+}
+
+.weather-card.day-2 .content {
+  padding: 25px 20px;
+}
+
+/* ===== Day 3 ===== */
+.weather-card.day-3 {
+  background-color: #323544;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+
+.weather-card.day-3 .header {
+  background-color: #2d303d;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #bfc1c8;
+}
+
+.weather-card.day-3 .content {
+  padding: 25px 20px;
+}
+
+/* ===== text ===== */
+.weather-card h4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.weather-card .text-secondary,
+.weather-card .text-primary {
+  font-size: 0.95rem;
+}
+
+.weather-card img {
+  margin-top: 10px;
+}
+
+/* ========== End Main Section ========== */
+
+/* ========== Start Footer ========== */
+footer {
+  background-color: #262936;
+}
+
+
+
+
+/* ===== icon ===== */
+
+footer ul li {
+  padding: 10px 15px;
+  border-radius: 50%;
+  border: 1px solid #009AD8;
+  color: #009AD8;
+  background-color: #1E202B;
+}
+
+footer ul li:hover {
+  color: #fff;
+  background-color: #009AD8;
+}
+
+footer .search-box {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  border-radius: 50px;
+  max-width: 750px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
+footer .search-input {
+  background-color: transparent;
+  border: none;
+  flex-grow: 1;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/* ========== End Footer ========== */
