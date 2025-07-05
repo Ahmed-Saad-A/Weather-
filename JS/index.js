@@ -1,5 +1,5 @@
 let key = "b3367b05765144deb0a221308250207";
-let baseUrl = "http://api.weatherapi.com/v1";
+let baseUrl = "https://api.weatherapi.com/v1";
 
 // ========== Start: DOM Elements ==========
 const input = document.getElementById("searchInput");
