@@ -1,13 +1,23 @@
+:root {
+  --bg-dark: #0e111a;
+  --bg-panel: #1e2232;
+  --primary: #00b4ff;
+  --primary-dark: #009ad8;
+  --text-muted: #c9d1d9;
+  --shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", "Segoe UI", Tahoma, sans-serif;
 }
 
 body {
-  background-color: #1E202B;
+  background: radial-gradient(circle at top, #1f2438 0%, #0c0f1b 70%);
   color: #ffffff;
+  min-height: 100vh;
 }
 
 /* ========== strat Header ========== */
@@ -23,7 +33,9 @@ body {
 }
 
 nav.custom-navbar {
-  background-color: #1e202b;
+  background-color: rgba(14, 17, 26, 0.92);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
 }
 
 .navbar-nav a.nav-link {
@@ -37,25 +49,54 @@ nav.custom-navbar {
 
 .navbar-nav .nav-link.active,
 .navbar-nav a.nav-link:hover {
-  border-color: #009ad8;
-  color: #009ad8;
+  border-color: var(--primary);
+  color: var(--primary);
+  background-color: rgba(0, 180, 255, 0.08);
+}
+
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+  padding: 6px 12px;
+  background-color: rgba(255, 255, 255, 0.08);
+  transition: border-color 0.3s ease, background-color 0.3s ease, transform 0.15s;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 180, 255, 0.25);
+}
+
+.navbar-toggler:active {
+  transform: scale(0.95);
+}
+
+.navbar-toggler-icon {
+  background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff),
+    linear-gradient(#fff, #fff);
+  background-position: center 20%, center, center 80%;
+  background-size: 24px 2px, 24px 2px, 24px 2px;
+  background-repeat: no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 /* ========== End Header ========== */
 
 /* ========== strat Main Layout ========== */
 .breadcrumb {
-  background-color: #262936;
+  background-color: rgba(38, 41, 54, 0.8);
   padding: 10px 25px;
   width: 100%;
   border-radius: 40px;
-  color: #c9d1d9;
+  color: var(--text-muted);
   display: inline-block;
   margin-bottom: 30px;
+  backdrop-filter: blur(6px);
 }
 
 .breadcrumb a {
-  color: #c9d1d9;
+  color: var(--text-muted);
   text-decoration: none;
   margin-right: 5px;
 }
@@ -69,6 +110,10 @@ nav.custom-navbar {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
+  padding: 30px;
+  background-color: rgba(14, 17, 26, 0.35);
+  border-radius: 30px;
+  box-shadow: var(--shadow);
 }
 
 .contact-info {
@@ -76,9 +121,10 @@ nav.custom-navbar {
 }
 
 .card {
-  background-color: #262936;
+  background-color: rgba(38, 41, 54, 0.9);
   border-radius: 10px;
   padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .card p {
@@ -86,11 +132,11 @@ nav.custom-navbar {
   font-size: 16px;
   display: flex;
   align-items: center;
-  color: #c9d1d9;
+  color: var(--text-muted);
 }
 
 .card i {
-  color: #00bfff;
+  color: var(--primary);
   margin-right: 10px;
   min-width: 20px;
 }
@@ -106,7 +152,7 @@ nav.custom-navbar {
 
 .contact-form p {
   font-size: 15px;
-  color: #c9d1d9;
+  color: var(--text-muted);
   margin-bottom: 30px;
   max-width: 700px;
   line-height: 1.6;
@@ -122,18 +168,20 @@ form .row {
 form input,
 form textarea {
   background-color: transparent;
-  border: 1px solid #30363d;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 30px;
   padding: 12px 20px;
   color: #ffffff;
   flex: 1;
   min-width: 250px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 form input:focus,
 form textarea:focus {
   outline: none;
-  border-color: #00bfff;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 180, 255, 0.15);
 }
 
 form textarea {
@@ -144,7 +192,7 @@ form textarea {
 }
 
 button {
-  background-color: #00bfff;
+  background: linear-gradient(135deg, var(--primary), #0075ff);
   color: #fff;
   border: none;
   border-radius: 25px;
@@ -153,11 +201,42 @@ button {
   cursor: pointer;
   float: right;
   margin-top: 10px;
-  transition: background-color 0.3s ease;
+  transition: transform 0.2s ease, background 0.3s ease;
 }
 
 button:hover {
-  background-color: #0099cc;
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+button:active {
+  transform: translateY(2px);
 }
 
 /* ========== End Main Layout ========== */
+
+@media (max-width: 991.98px) {
+  .navbar-nav a.nav-link {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .contact-section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contact-section {
+    padding: 15px;
+  }
+
+  form .row {
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
